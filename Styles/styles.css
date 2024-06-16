@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 5px;
     padding: 20px;
     background-color: #2c2c2e; /* Slightly lighter dark shade for the container */
     border-radius: 10px;
@@ -16,13 +16,14 @@ body {
 }
 
 h1 {
-    color: #0a84ff; /* Apple's blue color for headings */
+    color: #dbe1e7; /* Apple's blue color for headings */
     text-align: center;
     font-size: 60px;
+    margin-top: 20px;
 }
 
 h2{
-    color: #0a84ff; /* Apple's blue color for headings */
+    color: #dbe1e7; /* Apple's blue color for headings */
     text-align: center;
 }
 
@@ -81,7 +82,7 @@ button {
 }
 
 .delete-btn {
-    width: 95%;
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
