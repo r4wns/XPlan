@@ -22,7 +22,7 @@ h1 {
     margin-top: 20px;
 }
 
-h2{
+h2 {
     color: #dbe1e7; /* Apple's blue color for headings */
     text-align: center;
 }
@@ -52,11 +52,11 @@ button {
     color: white;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and transform */
 }
 
-#button1
-{
+#button1, #button2, .delete-btn {
     width: 100%;
     padding: 10px;
     border: none;
@@ -66,31 +66,6 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease; 
-}
-
-#button2
-{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0a84ff; /* Apple's blue color for buttons */
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; 
-}
-
-.delete-btn {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0a84ff; /* Apple's blue color for buttons */
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and transform */
 }
 
 button:hover, .delete-btn:hover {
@@ -125,6 +100,10 @@ button:hover, .delete-btn:hover {
 
 .delete-btn:hover {
     background-color: #ff2d55; /* Slightly different shade of red for hover effect */
+}
+
+.hidden {
+    display: none;
 }
 
 .poof {

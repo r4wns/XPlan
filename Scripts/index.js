@@ -1,3 +1,12 @@
+document.getElementById('addEventButton').addEventListener('click', function() {
+    const addEventContainer = document.getElementById('addEventContainer');
+    if (addEventContainer.classList.contains('hidden')) {
+        addEventContainer.classList.remove('hidden');
+    } else {
+        addEventContainer.classList.add('hidden');
+    }
+});
+
 // Function to save events to localStorage
 function saveEventsToLocalStorage(events) {
     localStorage.setItem('events', JSON.stringify(events));
@@ -83,6 +92,12 @@ function editEvent(index) {
         event.preventDefault();
         updateEvent(index);
     };
+
+    // Show the form if it's hidden
+    const addEventContainer = document.getElementById('addEventContainer');
+    if (addEventContainer.classList.contains('hidden')) {
+        addEventContainer.classList.remove('hidden');
+    }
 }
 
 // Function to update an event
@@ -106,6 +121,10 @@ function updateEvent(index) {
 
     // Clear form inputs
     form.reset();
+
+    // Hide the form after updating
+    const addEventContainer = document.getElementById('addEventContainer');
+    addEventContainer.classList.add('hidden');
 }
 
 // Function to add a new event
@@ -141,6 +160,10 @@ function addEvent(event) {
 
     // Display events after adding new event
     displayEventsFromLocalStorage();
+
+    // Hide the form after adding
+    const addEventContainer = document.getElementById('addEventContainer');
+    addEventContainer.classList.add('hidden');
 }
 
 // Load and display events when the page loads
